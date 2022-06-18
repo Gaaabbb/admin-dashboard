@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar-background"></div>
+    <div class="sidebar">
+
+        <i class="fa-solid fa-xmark"></i>
+
+        <div class="sb-group-1">
+            <a class="sb-title" href="">
+                <span class="material-icons"> dashboard </span><span>Dashboard</span>
+            </a>
+            <a href=""><i class="fa-solid fa-house"></i>Home</a>
+            <a href=""><i class="fa-solid fa-address-card"></i>Profile</a>
+            <a href=""><i class="fa-solid fa-message"></i>Messages</a>
+            <a href=""><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+            <a href=""><i class="fa-solid fa-list-check"></i>Tasks</a>
+            <a href=""><i class="fa-solid fa-people-group"></i>Communities</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="sb-group-2">
+            <a href=""><i class="fa-solid fa-gear"></i>Settings</a>
+            <a href=""><i class="fa-solid fa-headset"></i>Support</a>
+            <a href=""><i class="fa-solid fa-shield"></i>Privacy</a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="top">
+
+            <div class="top-group-1">
+                <i class="fa-solid fa-bars"></i>
+                <label for="search-bar" id="search-bar-label">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="search-bar" name="search" placeholder="Search">
+                </label>
+            </div>
+
+            <div class="top-group-2">
+                <i class="fa-solid fa-bell"></i>
+                <a href="">
+                    <img id="profile-picture" src="images/goku.png" alt="profile-picture">
+                    <label for="profile-picture">Son Goku</label>
+                </a>
+            </div>
+            
+            <div class="top-group-3">
+                <img id="profile-picture" src="images/goku.png" alt="profile-picture">
+                <div class="introduction">
+                    <div class="greeting">Hi there,</div>
+                    <div class="username">Son Goku (@goku)</div>
+                </div>
+            </div>
+
+            <div class="top-group-4">
+                <div class="buttons buttons-closed">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div class="projects">
+
+                <div class="projects-header">Your Projects</div>
+
+                <div class="projects-cards">
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Super Cool Project</div>
+                            <div class="card-text-body">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh
+                                erat, id facilisis felis accumsan nec.
+                            </div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Less Cool Project</div>
+                            <div class="card-text-body">Sollicitudin tempor id eu nisl. Nibh cras pulvinar mattis nunc. 
+                                Auctor urna nunc id cursus metus. Vitae justo eget magna fermentum. Suscipit tellus mauris a 
+                                diam maecenas sed enim. Volutpat commodo sed egestas egestas fringilla.</div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Impossible App</div>
+                            <div class="card-text-body">Maecenas volutpat blandit aliquam etiam erat. Faucibus vitae aliquet 
+                                nec ullamcorper sit. Egestas dui id ornare arcu odio ut sem.</div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Easy Peasy App</div>
+                            <div class="card-text-body">Et magnis dis parturient montes. Quis blandit turpis cursus in hac 
+                                habitasse platea dictumst. Dui accumsan sit amet nulla. Elementum tempus egestas sed sed risus
+                                pretium quam vulputate dignissim.</div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Ad Blocker</div>
+                            <div class="card-text-body">Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Tellus
+                                id interdum velit laoreet.</div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+
+                    <div class="projects-card">
+                        <div class="projects-card-text">
+                            <div class="card-text-head">Money Maker</div>
+                            <div class="card-text-body">Eu augue ut lectus arcu bibendum at varius vel pharetra. Eu feugiat 
+                                pretium nibh ipsum consequat nisl vel pretium. Nibh tortor id aliquet lectus proin.</div>
+                        </div>
+
+                        <div class="card-buttons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-download"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcements">
+
+                <div class="announcements-header">Announcements</div>
+
+                <div class="announcements-cards">
+
+                    <div class="announcement-card-text">
+                        <div class="ann-card-text-head">Site Maintenance</div>
+                        <div class="ann-card-text-body">Ut porttitor leo a diam sollicitudin tempor. Scelerisque purus semper
+                             eget duis at. Odio pellentesque diam volutpat commodo sed egestas egestas.</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+
+                    <div class="announcement-card-text">
+                        <div class="ann-card-text-head">Community Share Day</div>
+                        <div class="ann-card-text-body">Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.
+                             At imperdiet dui accumsan sit amet nulla.</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+
+                    <div class="announcement-card-text">
+                        <div class="ann-card-text-head">Updated Privacy Policy</div>
+                        <div class="ann-card-text-body">Massa vitae tortor condimentum lacinia quis vel eros donec ac. Tortor 
+                            pretium viverra suspendisse potenti. Velit euismod in pellentesque massa placerat.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending">
+
+                <div class="trending-header">Trending</div>
+
+                <div class="trending-card-container">
+                    <div class="trending-card">
+                        <img src="images/luffy.jpg" alt="trending">
+                        <div class="trending-card-text">
+                            <div>@luffy</div>
+                            <div>Monkey D. Luffy</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="images/naruto.jpg" alt="trending">
+                        <div class="trending-card-text">
+                            <div>@naruto</div>
+                            <div>Naruto Uzumaki</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="images/goku.png" alt="trending">
+                        <div class="trending-card-text">
+                            <div>@goku</div>
+                            <div>Son Goku</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="images/ichigo.jpg" alt="trending">
+                        <div class="trending-card-text">
+                            <div>@ichigo</div>
+                            <div>Ichigo Kurosaki</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">Copyright © 2022 Gaaabbb</div>
+            <a class="github-link" href="https://github.com/Gaaabbb/admin-dashboard" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
