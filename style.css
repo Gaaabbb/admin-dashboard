@@ -86,12 +86,11 @@
     width: 0;
     height: 2px;
     background-color: var(--white-color);
-    transition: width 0.25s ease-out;
+    transition: all 200ms ease-out;
   }
 .sidebar a:not(.sb-title):hover::after {
     width: 100%;
-    color: greenyellow
-  }
+}
 
 
 
@@ -256,6 +255,13 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-template-columns: auto;
     grid-template-rows: 1fr max-content;
     gap: var(--font-size-large);
+    transition: all 200ms ease-in-out;
+}
+.projects-card:hover,
+.announcements-cards:hover,
+.trending-card-container:hover {
+    transform: scale(1.05);
+    transition: all 200ms ease-in-out;
 }
 .card-text-head {
     font-size: var(--font-size-regular);
@@ -405,13 +411,8 @@ input[type="search"]::-webkit-search-results-decoration {
     background-color: #ff3f4d;
 }
 .top-group-4 button:active {
-    ￼New
-    ￼Upload
-    ￼Share
-    Your Projects
-    Super Cool Project
-    Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.
-    
+    background-color: #e73b46;
+
 }
 
 
